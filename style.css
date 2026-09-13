@@ -334,8 +334,16 @@ hr {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--fg-muted);
-  white-space: nowrap;
+  /* NOT white-space: nowrap on the container. The date plus a "Latest" badge is
+     far wider than the 7rem column, and nowrap made it overflow and collide with
+     the themes column. The date itself stays unbroken; the badge wraps under it. */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.5rem;
 }
+
+.entry__date time { white-space: nowrap; }
 
 .entry__body { min-width: 0; }
 
@@ -388,7 +396,8 @@ hr {
 }
 
 @media (min-width: 40rem) {
-  .entry__link { grid-template-columns: 7rem 1fr; }
+  /* 9.5rem fits "Sun 13 Sep 2026" at this size; the badge wraps beneath it. */
+  .entry__link { grid-template-columns: 9.5rem 1fr; }
   .entry__date { padding-top: 0.2rem; }
 }
 

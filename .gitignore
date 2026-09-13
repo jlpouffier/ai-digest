@@ -1,0 +1,2 @@
+# site/ is rendered output only. Nothing private may ever land here.
+# render.py rebuilds every file; hand-edits will be overwritten.

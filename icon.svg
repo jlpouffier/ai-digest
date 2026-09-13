@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="AI Digest">
+  <style>
+    .bg { fill: #fcfbf8; }
+    .fg { fill: #1a1917; }
+    .ac { fill: #9a3f16; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #141412; }
+      .fg { fill: #e9e6dd; }
+      .ac { fill: #e0a06a; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32" rx="6"/>
+  <rect class="ac" x="7" y="8" width="12" height="2.5" rx="1.25"/>
+  <rect class="fg" x="7" y="14.75" width="18" height="2.5" rx="1.25"/>
+  <rect class="fg" x="7" y="21.5" width="18" height="2.5" rx="1.25"/>
+</svg>

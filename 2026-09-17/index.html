@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI digest — Thursday 17 September 2026</title>
+<meta name="description" content="Four days in which every frontier lab endorsed slowing capability gains, and the argument moved straight from engineering to politics. Underneath it, the paper feed spent the same…">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://jlpouffier.github.io/ai-digest/2026-09-17/">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Digest">
+<meta property="og:title" content="AI digest — Thursday 17 September 2026">
+<meta property="og:description" content="Four days in which every frontier lab endorsed slowing capability gains, and the argument moved straight from engineering to politics. Underneath it, the paper feed spent the same…">
+<meta property="og:url" content="https://jlpouffier.github.io/ai-digest/2026-09-17/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta property="article:published_time" content="2026-09-17">
+<meta property="article:section" content="AI">
+</head>
+<body>
+<header class="masthead">
+<div class="wrap masthead__row">
+<a class="wordmark" href="../">AI Digest</a>
+<p class="tagline">What changed in AI. Sundays and Thursdays.</p>
+</div>
+</header>
+<main class="wrap">
+<article>
+<h1>AI digest — Thursday 17 September 2026</h1>
+<p class="dateline"><span><time datetime="2026-09-17">Thursday, 17 September 2026</time></span><span>4 themes</span><span>72 items</span><span>5 min read</span></p>
+<nav class="toc" aria-label="In this edition">
+<p class="toc__label">In this edition</p>
+<ol>
+<li><a href="#the-labs-called-for-a-brake-and-the-fight-moved">The labs called for a brake, and the fight moved off technical ground</a></li>
+<li><a href="#recursive-self-improvement-stopped-being-a">Recursive self-improvement stopped being a warning and became a research programme</a></li>
+<li><a href="#the-movement-is-in-the-price-of-a-call-not-the">The movement is in the price of a call, not the position of the frontier</a></li>
+<li><a href="#the-assistant-stops-being-a-chat-window">The assistant stops being a chat window</a></li>
+</ol>
+</nav>
+<p>Four days in which every frontier lab endorsed slowing capability gains, and the argument moved straight from engineering to politics. Underneath it, the paper feed spent the same window building the capability the labs named as their reason to brake. Elsewhere the numbers that moved were prices rather than benchmarks, and the assistant kept turning into a surface other products ship through.</p>
+<h2 id="the-labs-called-for-a-brake-and-the-fight-moved">The labs called for a brake, and the fight moved off technical ground</h2>
+<p>Every frontier lab endorsed slowing capability gains inside four days, and the argument turned political immediately. Dario Amodei's roughly 4,000-word essay asked the industry to "slow the pace at which we improve the capabilities of AI models"; Altman, Hassabis and Nadella backed it, and <a href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct">Microsoft</a> published a 37-page "humanist AI" code of conduct that rejects model consciousness outright (<a href="https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/">Ars Technica</a>). The one firm commitment is stage one: independent evaluators embedded inside Anthropic and OpenAI (<a href="https://www.thealgorithmicbridge.com/p/the-ai-industry-has-finally-discovered">The Algorithmic Bridge</a>). The trigger was an insider — Jacob Coxon's September 9 resignation, 170M+ views, with Anthropic's alignment lead putting extinction odds above 10% this decade (<a href="https://newsletter.safe.ai/p/aisn-81-anthropic-researchers-resignation">CAIS</a>).</p>
+<p>Reception split hard. Ars Technica reads a genuine break from winner-take-all; <a href="https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel">The Verge</a>'s sources call it a cartel against open-source rivals and warn of safety-washing; <a href="https://www.wheresyoured.at/ai-is-already-in-dangerous-hands/">Ed Zitron</a> says the extinction frame buries documented present harms; <a href="https://techpolicy.press/to-make-ai-rules-policymakers-must-resist-the-influence-of-radical-intentionalists">Tech Policy Press</a> says crediting models with intentions moves blame off their designers. Trump calls the risk a hoax; Xi calls the proposal a "Cold War playbook."</p>
+<p>Nothing binds yet. Watch the <a href="https://techpolicy.press/making-sense-of-ai-dread-dont-get-distracted-by-doomer-ceos-or-the-china-canard">FRONTIER Act</a>, whose auditors could suspend a model.</p>
+<h2 id="recursive-self-improvement-stopped-being-a">Recursive self-improvement stopped being a warning and became a research programme</h2>
+<p>Four papers in two days tried to define, measure or build recursive self-improvement, and the engineering is running ahead of the theory. <a href="https://huggingface.co/papers/2609.15364">RSIAgent</a> is training-free — no parameter updates, just agents accumulating reusable causal knowledge — and reports Kimi-K3 and GLM-5.3 at 78.98% on OSWorld 2.0 against a cited 72.60% for GPT-6 Astra. <a href="https://huggingface.co/papers/2609.14858">Dream-RSI</a> replays past discoveries offline so exploration policies can be scored without expensive online rollouts. The framework papers are more guarded: <a href="https://huggingface.co/papers/2609.13406">Generalized Agent Iteration</a> exists to make RSI's defects "statable one condition at a time" rather than "marketing hype", and <a href="https://huggingface.co/papers/2609.11873">The Last AI Built by Humans</a> places current systems low on an L1–L5 autonomy ladder.</p>
+<p>Richard Socher, pitching Recursive's $4.65B seed round <a href="https://www.latent.space/p/recursive">on Latent Space</a>, says his system beat human teams at optimisation in under two days and improved NVIDIA GPU kernels without CUDA experts. The papers do not share that timeline: <a href="https://huggingface.co/papers/2609.15818">Atria Dawn</a> reports humans still retaining most final decisions across 769 task records.</p>
+<p>The deployable part today is scaffolding, not self-modification: memory and exploration loops around a frozen model. Every figure here is author-reported.</p>
+<h2 id="the-movement-is-in-the-price-of-a-call-not-the">The movement is in the price of a call, not the position of the frontier</h2>
+<p>Mozilla's State of Open Source AI report puts the frontier-to-open-weights gap at 4.4 months, with Moonshot's Kimi K3 three points behind Anthropic's Fable 5 on the Artificial Analysis Intelligence Index at 30% of the cost (<a href="https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/">Ars Technica</a>). The releases follow: a 7B <a href="https://huggingface.co/papers/2609.13356">ZGCM-1</a> competitive with Qwen3-235B on math and agentic search, a 35B <a href="https://huggingface.co/papers/2609.11977">Occamy-1.0</a> tuned for the cost knee of co-work agents, and a seven-person team's <a href="https://huggingface.co/papers/2609.08418">Feyospace-v1</a> cyber agents topping open weights at their scale on CyberGym. <a href="https://platform.claude.com/docs/en/release-notes/overview#september-14-2026">Fable 5.1</a> held $10/$50 per MTok while cutting prompt cache reads to $0.25.</p>
+<p>TypeSafe's Jev, a non-autoregressive decision model claimed at 20–200x faster and 40–400x cheaper, splits its readers: <a href="https://latent.space/p/ainews-jev-a-system-one-model-that">AINews</a> sees frontier calls giving way to many small task-specific engines, while <a href="https://seangoedecke.com/jev-means-structured-output-is-interesting-again/">Sean Goedecke</a> says grammar-constrained decoding already gets most of that speed from ordinary LLMs and the hallucination immunity is semantic.</p>
+<p>Mozilla's recommendation is the one to test if you are pricing an agent loop: open weights as the default, closed models only for expert work, heavy retrieval and long context.</p>
+<h2 id="the-assistant-stops-being-a-chat-window">The assistant stops being a chat window</h2>
+<p>Anthropic collapsed Cowork, chat, Design, Docs and Slides into a single conversation, and the assistant is becoming the surface other products ship through rather than a destination. <a href="https://claude.com/blog/cowork-is-now-claude">Anthropic</a> frames it as removing context switching: one request yields a linked report and deck, with a choice between asking first and working continuously, Pro and Max first. <a href="https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides">The Verge</a> notes Docs are private by default with real-time collaboration, and reads the identical launch as catch-up on Gemini's native Gmail, Docs and Sheets integration. Anthropic's <a href="https://claude.com/blog/salesforce-in-claude">Salesforce plugin</a> points the same way: 37 skills, 7,000+ sellers at GitLab, Siemens and Legora.</p>
+<p>Everyone is picking a different seam. <a href="https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date">Google's Home MCP</a> lets Claude, Open Claw, Antigravity and Hermes run the smart home — The Verge's read: lock-in reduction; <a href="https://www.theverge.com/tech/995453/meta-one-subscriptions-ai">Meta One</a> bundles its assistant behind $7.99–$19.99 tiers. <a href="https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac">Snap's Specs Intelligence</a> goes anticipatory on AR glasses, <a href="https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/">Gemini 3.8 Live</a> into real-time voice (82.6 on Artificial Analysis' Speech-to-Speech Quality Index).</p>
+<p>If you build on an assistant, the integration point is moving from the chat box to MCP and plugins — and, at Meta, behind a paywall.</p>
+<h2 id="also-happened">Also happened</h2>
+<ul>
+<li><strong>Anthropic's misuse report names systematic distillation by Chinese labs</strong> — Alibaba alone peaked at 151 million exchanges, alongside Russian and Chinese cyber and surveillance cases. <a href="https://thezvi.substack.com/p/the-bad-guy-with-an-ai-named-claude">Don't Worry About the Vase (Zvi Mowshowitz)</a></li>
+<li><strong>California's new slate of AI bills targets bosses, clinicians and chatbots</strong> — first-in-nation rules on automated firing, chatbot therapy, attorney AI use and companion-chatbot audits. <a href="https://techpolicy.press/california-leads-the-way-with-new-slate-of-ai-bills">Tech Policy Press</a></li>
+<li><strong>Von der Leyen drops the frontier-model ambition and offers to convene the labs</strong> — Europe will pace the frontier and triple its compute rather than build frontier models itself. <a href="https://techpolicy.press/what-von-der-leyens-state-of-the-union-means-for-europes-tech-ambitions">Tech Policy Press</a></li>
+<li><strong>Lloyd's is underwriting AI agents against a 51-requirement standard</strong> — AIUC's $40M Series A comes with certification for Cursor and Harvey and a first agent policy at ElevenLabs. <a href="https://latent.space/p/aiuc">Latent Space / AINews (swyx &amp; Alessio)</a></li>
+<li><strong>61% of likely voters oppose new AI data centers, and almost nobody votes on it</strong> — a NYT/Siena poll finds consistent opposition that registers below 1% as a voting priority. <a href="https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september">The Verge — AI</a></li>
+<li><strong>Musk drops Apple from his antitrust suit but keeps suing OpenAI</strong> — the ChatGPT integration stays on iPhones while the monopoly claim now targets OpenAI alone. <a href="https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/">Ars Technica — AI</a></li>
+</ul>
+<hr>
+<p><strong>Sources:</strong> 33 read · 72 articles summarised · window 2026-09-13 → 2026-09-17.</p>
+</article>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<nav class="pager" aria-label="Editions">
+<a class="pager__prev" href="../2026-09-13/">← Sun 13 Sep</a>
+</nav>
+<p>Assembled from a hand-curated roster of sources. <a href="../">All editions</a>.</p>
+</div>
+</footer>
+</body>
+</html>
